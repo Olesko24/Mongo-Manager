@@ -75,11 +75,15 @@ Open a new terminal in the root folder and run the following command:
 npm run dev
 ```
 
+App running on [http://localhost:8080](http://localhost:8080)
+
 #### Production
 
 ```bash
 npm run build
 ```
+
+App running on [http://localhost:3020](http://localhost:3020)
 
 *Make sure you have [PM2](https://pm2.keymetrics.io/) installed.*
 
