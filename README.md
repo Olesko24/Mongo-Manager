@@ -6,9 +6,10 @@
 
 1. About Mongo Manager
 2. Installation
-   1. Requirements
-   2. Download & Setup
-   3. Config Files
+   2.1 Requirements
+   2.2 Download & Setup
+   2.3 Config Files
+   2.4 Start
 3. Used Packages
 
 ## 1. About Mongo Manager
