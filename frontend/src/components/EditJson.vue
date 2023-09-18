@@ -1,5 +1,10 @@
 <template>
-  <v-dialog :value="show" width="60%">
+  <v-dialog
+    :value="show"
+    width="60%"
+    @click:outside="closeDialog()"
+    @keydown="handleEscape"
+  >
     <v-card shaped elevation="3">
       <br />
       <v-card-title><h2>JSON Edit</h2></v-card-title>
@@ -101,6 +106,12 @@ export default Vue.extend({
       } catch (error) {
         this.showError = true;
         return false;
+      }
+    },
+    handleEscape(event: any) {
+      const { key } = event;
+      if (key === 'Escape') {
+        this.closeDialog();
       }
     }
   },
